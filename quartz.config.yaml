@@ -6,7 +6,7 @@ configuration:
   enablePopovers: true
   analytics: null
   locale: zh-CN
-  baseUrl: YOUR_GITHUB_USERNAME.github.io/website-library
+  baseUrl: Pigge28.github.io/website-library
   ignorePatterns:
     - private
     - templates
