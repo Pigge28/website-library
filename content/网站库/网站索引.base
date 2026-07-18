@@ -1,0 +1,32 @@
+filters:
+  and:
+    - file.inFolder("网站库")
+    - note["类型"] == "网站"
+formulas:
+  url_link: link(note["官网"], "访问网站")
+properties:
+  file.name:
+    displayName: 网站
+  大分类:
+    displayName: 大分类
+  功能标签:
+    displayName: 功能标签
+  formula.url_link:
+    displayName: 官网
+  状态:
+    displayName: 状态
+views:
+  - type: table
+    name: 按大分类
+    groupBy:
+      property: 大分类
+      direction: ASC
+    order:
+      - file.name
+      - 大分类
+      - 功能标签
+      - formula.url_link
+      - 状态
+    sort:
+      - property: 大分类
+        direction: DESC
